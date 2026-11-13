@@ -109,6 +109,14 @@ details p{margin:10px 0 0;color:var(--soft)}
 .final img{width:96px;height:96px;border-radius:26px;margin:0 auto 18px;box-shadow:0 14px 30px rgba(0,0,0,.25)}
 .final h2{font-size:clamp(32px,4.6vw,52px)}
 .final p{margin:10px auto 26px;max-width:40ch;font-size:18px;color:#FFE9F3}
+.contact{max-width:760px;margin:36px auto 56px;background:var(--card);border:1px solid var(--line);border-radius:26px;padding:28px 24px;text-align:center}
+.contact h2{font-size:clamp(28px,4vw,38px)}
+.contact p{color:var(--soft);margin:8px 0 14px}
+.contact .mail{display:inline-block;font:400 clamp(20px,3.4vw,26px) 'Lilita One',sans-serif;color:var(--pink2);word-break:break-all;margin-bottom:18px}
+.cbtns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.cbtns a,.cbtns button{font:900 15px Nunito,sans-serif;border:0;cursor:pointer;text-decoration:none;padding:12px 18px;border-radius:14px;background:#F3ECFF;color:var(--ink)}
+.cbtns .main{background:var(--pink);color:#fff;box-shadow:0 3px 0 var(--pink2)}
+.cbtns a:hover,.cbtns button:hover{filter:brightness(.96)}
 footer{padding:48px 0 40px;color:var(--soft);font-size:15px}
 footer .wrap{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center;justify-content:space-between}
 footer nav{display:flex;gap:20px;flex-wrap:wrap}
@@ -207,9 +215,25 @@ footer a:hover{color:var(--pink2)}
 </div>
 </main>
 
+<section id="contact" style="padding:0"><div class="wrap"><div class="contact">
+  <h2>Contact us</h2>
+  <p>Questions, ideas for new games or found a bug? We'd love to hear from you.</p>
+  <a class="mail" href="mailto:sleepysleve@gmail.com">sleepysleve@gmail.com</a>
+  <div class="cbtns">
+    <a class="main" href="mailto:sleepysleve@gmail.com?subject=Pocket%20Playland">✉️ Email us</a>
+    <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=sleepysleve@gmail.com&amp;su=Pocket%20Playland" target="_blank" rel="noopener">Open in Gmail</a>
+    <button type="button" id="copyMail">📋 Copy email</button>
+  </div>
+</div></div></section>
 <footer><div class="wrap">
   <span>© 2026 Sleepysleve · Pocket Playland</span>
-  <nav><a href="privacy.html">Privacy Policy</a><a href="delete-data.html">Delete my data</a><a href="mailto:sleepysleve@gmail.com">Contact</a></nav>
+  <nav><a href="privacy.html">Privacy Policy</a><a href="delete-data.html">Delete my data</a><a href="#contact">Contact</a></nav>
 </div></footer>
+<script>
+document.getElementById('copyMail').onclick=function(){var b=this,e='sleepysleve@gmail.com';
+  function done(){b.textContent='✅ Copied!';setTimeout(function(){b.textContent='📋 Copy email'},1800)}
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(e).then(done,fall)}else fall();
+  function fall(){var t=document.createElement('textarea');t.value=e;document.body.appendChild(t);t.select();try{document.execCommand('copy')}catch(x){}t.remove();done()}};
+</script>
 </body>
 </html>
