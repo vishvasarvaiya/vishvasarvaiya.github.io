@@ -26,14 +26,15 @@
 <body>
 <main>
   <header><img src="icon.png" alt=""><h1>Pocket Playland Privacy Policy</h1></header>
-  <p class="muted">Last updated: 13 November 2026</p>
+  <p class="muted">Last updated: 24 November 2026</p>
 
   <p>Pocket Playland ("the app", "we", "us") is a collection of offline mini-games for Android. This policy explains what information the app uses, why, and the choices you have. We wrote it to be short and plain.</p>
 
   <h2>The short version</h2>
   <ul>
-    <li>You do not need an account to play, and we never ask for your name, email, phone number or contacts.</li>
-    <li>Your scores, coins, levels and settings are saved only on your phone. We do not have a server and we never receive them.</li>
+    <li>You do not need an account to play, and we never ask for your email, phone number or contacts.</li>
+    <li>Your scores, coins, levels and settings are saved only on your phone. We never receive them.</li>
+    <li>If you choose to play online, add friends or send challenges, the app keeps a small online profile on our server (Google Firebase): a player tag, the nickname you choose, your avatar, level and online results. You can delete it at any time in the app (Settings → Delete my online profile).</li>
     <li>The app shows ads from Google AdMob (with Unity Ads as a second ad source). These services may collect some device information to show and measure ads, as described below.</li>
     <li>The app uses Google Firebase to count anonymous app usage and to report crashes, so we can fix problems.</li>
     <li>Purchases (such as Remove Ads, coin packs, Playland Pass Gold and VIP) are handled entirely by Google Play. We never see your payment details.</li>
@@ -41,6 +42,18 @@
 
   <h2>Information saved on your device</h2>
   <p>To remember your progress, the app stores game data in your phone's local storage: scores and best times, levels reached, coins, hints and boosters, favourite games, and settings such as volume, music and vibration. This data stays on your device. It is deleted if you use "Reset all scores and coins" in Settings, clear the app's storage, or uninstall the app.</p>
+
+  <h2>Online play, friends and challenges (Google Firebase)</h2>
+  <p>Online matches, friends, invites and challenges are optional. When you use them, the app signs you in anonymously to Google Firebase (no email or phone number) and stores the following in Firebase Realtime Database, a Google service:</p>
+  <div class="wrap"><table>
+    <tr><th>Data</th><th>Why</th><th>Who can see it</th></tr>
+    <tr><td>A random anonymous user ID and your player tag (7 letters and numbers)</td><td>To find players for a match and to let friends add you</td><td>Other players can look up a tag; the ID is never shown</td></tr>
+    <tr><td>The nickname you type, your avatar and app level</td><td>Shown to the players you play with and to your friends</td><td>Players in your matches, your friends</td></tr>
+    <tr><td>Your friends list, friend requests and game invites</td><td>The friends feature</td><td>You, and the friend each entry is about</td></tr>
+    <tr><td>Whether you are online and which game you are playing</td><td>Shown to your friends ("Playing Ludo")</td><td>Your friends</td></tr>
+    <tr><td>Moves in an online match, and challenge scores</td><td>To play the match on every phone; to compare challenge scores</td><td>Players in that match or challenge</td></tr>
+  </table></div>
+  <p>Match data is deleted when the match ends. Your profile, friends, requests, invites and challenges are kept until you delete them. To delete everything at once, open Settings in the app and tap <b>Delete my online profile</b>; see <a href="delete-data.html">Delete your data</a>. There is no free-text chat: players can only send a fixed set of emoji.</p>
 
   <h2>Advertising (Google AdMob)</h2>
   <p>The app is free and is supported by ads from Google AdMob: a banner on the menu, a full-screen ad between some games, and optional reward ads you can choose to watch for coins or hints. To serve, limit, measure and protect these ads, Google's software in the app may collect:</p>
@@ -71,7 +84,7 @@
   <p>If you allow notifications, the app schedules reminders on your phone (for example that your daily reward is ready). They are created on your device; no notification data is sent to us. You can turn them off in the app's Settings or in your phone's settings.</p>
 
   <h2>Internet access</h2>
-  <p>All games work without the internet. The app uses an internet connection only for ads, anonymous usage and crash reports (Firebase), purchases, app updates and reviews through Google Play.</p>
+  <p>All games work without the internet. The app uses an internet connection only for online play, friends and challenges (Firebase), ads, anonymous usage and crash reports (Firebase), purchases, app updates and reviews through Google Play.</p>
 
   <h2>Children</h2>
   <p>Pocket Playland is intended for a general audience and is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided personal information through the app, contact us and we will help remove it.</p>
@@ -80,7 +93,7 @@
   <p>We do not sell your personal information, and we do not share it with anyone other than the Google and Unity services described above.</p>
 
   <h2>Security and retention</h2>
-  <p>Game data is kept on your device until you reset it or uninstall the app. Information collected by Google is kept according to Google's own retention policies.</p>
+  <p>Game data is kept on your device until you reset it or uninstall the app. Your online profile is kept on Firebase until you delete it in the app (or ask us by email); it is sent over encrypted connections (HTTPS) and protected by access rules so players can only change their own data. Information collected by Google is kept according to Google's own retention policies.</p>
 
   <h2>Changes to this policy</h2>
   <p>If we change this policy, we will update this page and the "Last updated" date above.</p>
