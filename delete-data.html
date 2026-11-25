@@ -3,53 +3,103 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Delete Your Data · Pocket Playland</title>
+<title>Privacy Policy · Pocket Playland</title>
 <link rel="icon" href="icon.png">
 <style>
-  :root { --bg: #FFF7EC; --ink: #2B2140; --muted: #6E6280; --line: #EADFCB; --accent: #C2185B; --card: #FFFFFF; }
-  @media (prefers-color-scheme: dark) { :root { --bg: #17121F; --ink: #F3EDFF; --muted: #B2A6C6; --line: #3A2F4C; --accent: #FF7AA8; --card: #231C30; } }
+  :root { --bg: #FFF7EC; --ink: #2B2140; --muted: #6E6280; --line: #EADFCB; --accent: #C2185B; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #17121F; --ink: #F3EDFF; --muted: #B2A6C6; --line: #3A2F4C; --accent: #FF7AA8; } }
   body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
   main { max-width: 720px; margin: 0 auto; padding: 32px 20px 56px; }
   header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
   header img { width: 56px; height: 56px; border-radius: 14px; }
   h1 { font-size: 1.8rem; line-height: 1.2; margin: 0; }
-  h2 { font-size: 1.15rem; margin: 30px 0 6px; }
-  .muted { color: var(--muted); }
-  ol, ul { padding-left: 22px; } li { margin: 6px 0; }
+  h2 { font-size: 1.15rem; margin: 32px 0 6px; }
+  p, li { color: var(--ink); } .muted { color: var(--muted); }
+  ul { padding-left: 22px; } li { margin: 4px 0; }
   a { color: var(--accent); }
-  .box { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; }
+  table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  th { font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+  .wrap { overflow-x: auto; }
 </style>
 </head>
 <body>
 <main>
-  <header><img src="icon.png" alt=""><h1>Delete your Pocket Playland data</h1></header>
-  <p class="muted">App: Pocket Playland: Offline Games · Developer: Sleepysleve</p>
+  <header><img src="icon.png" alt=""><h1>Pocket Playland Privacy Policy</h1></header>
+  <p class="muted">Last updated: 24 November 2026</p>
 
-  <h2>Delete the game data on your phone (instant)</h2>
-  <p>Your scores, coins, levels and settings are stored only on your phone. We do not keep a copy. To delete them:</p>
-  <ol>
-    <li>Open Pocket Playland and tap the menu button (top left).</li>
-    <li>Tap <b>Reset all scores and coins</b>, then tap it again to confirm.</li>
-  </ol>
-  <p>Or uninstall the app, or clear its storage in your phone's <b>Settings → Apps → Pocket Playland → Storage → Clear storage</b>. Either way, everything is deleted straight away.</p>
+  <p>Pocket Playland ("the app", "we", "us") is a collection of offline mini-games for Android. This policy explains what information the app uses, why, and the choices you have. We wrote it to be short and plain.</p>
 
-  <h2>Ask us to delete data (by email)</h2>
-  <div class="box">
-    <ol>
-      <li>Email <a href="mailto:sleepysleve@gmail.com?subject=Pocket%20Playland%20data%20deletion">sleepysleve@gmail.com</a> with the subject <b>"Pocket Playland data deletion"</b>.</li>
-      <li>Tell us what you would like deleted. If you signed in to Google Play Games, include your Play Games gamer name.</li>
-      <li>We reply within 30 days and confirm what was deleted.</li>
-    </ol>
-  </div>
-
-  <h2>What is deleted and what is kept</h2>
+  <h2>The short version</h2>
   <ul>
-    <li><b>Game progress and settings:</b> stored only on your device, deleted as described above. We hold nothing on a server.</li>
-    <li><b>Google Play Games scores</b> (only if you signed in): these are held by Google. You can delete your Play Games profile and its data at any time in the <b>Google Play Games</b> app → Settings → Delete Play Games account &amp; data, or at <a href="https://myaccount.google.com/data-and-privacy" rel="noopener">myaccount.google.com/data-and-privacy</a>.</li>
-    <li><b>Advertising data</b> collected by Google AdMob (advertising ID, approximate location, ad interactions): held by Google under <a href="https://policies.google.com/privacy" rel="noopener">Google's Privacy Policy</a>. You can reset or delete your advertising ID in your phone's <b>Settings → Google → Ads</b>.</li>
+    <li>You do not need an account to play, and we never ask for your email, phone number or contacts.</li>
+    <li>Your scores, coins, levels and settings are saved only on your phone. We never receive them.</li>
+    <li>If you choose to play online, add friends or send challenges, the app keeps a small online profile on our server (Google Firebase): a player tag, the nickname you choose, your avatar, level and online results. You can delete it at any time in the app (Settings → Delete my online profile).</li>
+    <li>The app shows ads from Google AdMob (with Unity Ads as a second ad source). These services may collect some device information to show and measure ads, as described below.</li>
+    <li>The app uses Google Firebase to count anonymous app usage and to report crashes, so we can fix problems.</li>
+    <li>Purchases (such as Remove Ads, coin packs, Playland Pass Gold and VIP) are handled entirely by Google Play. We never see your payment details.</li>
   </ul>
 
-  <p class="muted">See also our <a href="privacy.html">Privacy Policy</a>.</p>
+  <h2>Information saved on your device</h2>
+  <p>To remember your progress, the app stores game data in your phone's local storage: scores and best times, levels reached, coins, hints and boosters, favourite games, and settings such as volume, music and vibration. This data stays on your device. It is deleted if you use "Reset all scores and coins" in Settings, clear the app's storage, or uninstall the app.</p>
+
+  <h2>Online play, friends and challenges (Google Firebase)</h2>
+  <p>Online matches, friends, invites and challenges are optional. When you use them, the app signs you in anonymously to Google Firebase (no email or phone number) and stores the following in Firebase Realtime Database, a Google service:</p>
+  <div class="wrap"><table>
+    <tr><th>Data</th><th>Why</th><th>Who can see it</th></tr>
+    <tr><td>A random anonymous user ID and your player tag (7 letters and numbers)</td><td>To find players for a match and to let friends add you</td><td>Other players can look up a tag; the ID is never shown</td></tr>
+    <tr><td>The nickname you type, your avatar and app level</td><td>Shown to the players you play with and to your friends</td><td>Players in your matches, your friends</td></tr>
+    <tr><td>Your friends list, friend requests and game invites</td><td>The friends feature</td><td>You, and the friend each entry is about</td></tr>
+    <tr><td>Whether you are online and which game you are playing</td><td>Shown to your friends ("Playing Ludo")</td><td>Your friends</td></tr>
+    <tr><td>Moves in an online match, and challenge scores</td><td>To play the match on every phone; to compare challenge scores</td><td>Players in that match or challenge</td></tr>
+  </table></div>
+  <p>Match data is deleted when the match ends. Your profile, friends, requests, invites and challenges are kept until you delete them. To delete everything at once, open Settings in the app and tap <b>Delete my online profile</b>; see <a href="delete-data.html">Delete your data</a>. There is no free-text chat: players can only send a fixed set of emoji.</p>
+
+  <h2>Advertising (Google AdMob)</h2>
+  <p>The app is free and is supported by ads from Google AdMob: a banner on the menu, a full-screen ad between some games, and optional reward ads you can choose to watch for coins or hints. To serve, limit, measure and protect these ads, Google's software in the app may collect:</p>
+  <div class="wrap"><table>
+    <tr><th>Data</th><th>Why</th></tr>
+    <tr><td>Advertising ID (a resettable ID set by Android)</td><td>Showing ads, limiting how often you see the same ad, and measuring ad performance</td></tr>
+    <tr><td>IP address and approximate location derived from it</td><td>Showing ads suitable for your region and preventing fraud</td></tr>
+    <tr><td>Device and app information (model, Android version, language, app version)</td><td>Making ads display correctly</td></tr>
+    <tr><td>Ad interactions (ads viewed and tapped) and crash information from the ad software</td><td>Measuring ads, preventing fraud, fixing problems</td></tr>
+  </table></div>
+  <p>This information is collected and handled by Google under <a href="https://policies.google.com/privacy" rel="noopener">Google's Privacy Policy</a>. You can learn more at <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses information from apps that use its services</a>.</p>
+  <p><b>Your choices:</b></p>
+  <ul>
+    <li>If you are in the European Economic Area, the United Kingdom or Switzerland, the app asks for your consent before personalised ads are shown. You can change your choice at any time in <b>Settings → Ad privacy → Privacy choices</b>.</li>
+    <li>On any Android phone you can reset or delete your advertising ID, or opt out of personalised ads, in your phone's <b>Settings → Google → Ads</b> (the exact menu depends on your phone).</li>
+      </ul>
+
+  <h2>Unity Ads</h2>
+  <p>Some ads shown through AdMob may come from Unity Ads. Unity may collect the same kinds of information listed above (advertising ID, IP address, device information and ad interactions) to show and measure those ads, under <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" rel="noopener">Unity's Privacy Policy</a>. Your ad privacy choices above apply to these ads too.</p>
+
+  <h2>App usage and crash reports (Google Firebase)</h2>
+  <p>The app uses Google Firebase Analytics and Firebase Crashlytics. Analytics records anonymous events such as which games are opened, levels finished and features used, together with device information (model, Android version, language, app version), the app instance ID and approximate location from your IP address. Crashlytics sends a report when the app crashes, with the device information and the technical details of the crash. We use this only to understand which games people enjoy and to fix bugs. It is handled by Google under <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase's privacy information</a>. We do not use it to identify you.</p>
+
+  <h2>Purchases (Google Play Billing)</h2>
+  <p>In-app purchases and the VIP subscription are processed by Google Play. Google handles your payment details under Google's Privacy Policy; we never receive them. The app only receives a confirmation of what you bought, so it can give you the item and restore it if you reinstall the app. You can manage or cancel a subscription at any time in the Google Play Store under <b>Payments &amp; subscriptions</b>.</p>
+
+  <h2>Notifications</h2>
+  <p>If you allow notifications, the app schedules reminders on your phone (for example that your daily reward is ready). They are created on your device; no notification data is sent to us. You can turn them off in the app's Settings or in your phone's settings.</p>
+
+  <h2>Internet access</h2>
+  <p>All games work without the internet. The app uses an internet connection only for online play, friends and challenges (Firebase), ads, anonymous usage and crash reports (Firebase), purchases, app updates and reviews through Google Play.</p>
+
+  <h2>Children</h2>
+  <p>Pocket Playland is intended for a general audience and is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided personal information through the app, contact us and we will help remove it.</p>
+
+  <h2>Sharing and selling</h2>
+  <p>We do not sell your personal information, and we do not share it with anyone other than the Google and Unity services described above.</p>
+
+  <h2>Security and retention</h2>
+  <p>Game data is kept on your device until you reset it or uninstall the app. Your online profile is kept on Firebase until you delete it in the app (or ask us by email); it is sent over encrypted connections (HTTPS) and protected by access rules so players can only change their own data. Information collected by Google is kept according to Google's own retention policies.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If we change this policy, we will update this page and the "Last updated" date above.</p>
+
+  <h2>Contact</h2>
+  <p>Questions or requests about privacy: <a href="mailto:sleepysleve@gmail.com">sleepysleve@gmail.com</a></p>
 </main>
 </body>
 </html>
